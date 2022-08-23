@@ -28,6 +28,8 @@ class LoginViewController: UIViewController {
         updateLoginBtn()
     }
     @IBAction func loginBtnPressed(_ sender: UIButton) {
+        // email:  yamany@gmail.com
+        // password: 123456
         guard let email = emailTF.text, let password = passwordTF.text else{return}
         
         loginProccess(email: email, password: password) { loginData in
